@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Blocks="http://www.eclipse.org/papyrus/sysml/1.4/SysML/Blocks" xmlns:PortsAndFlows="http://www.eclipse.org/papyrus/sysml/1.4/SysML/PortsAndFlows" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/papyrus/sysml/1.4/SysML/Blocks http://www.eclipse.org/papyrus/sysml/1.4/SysML#//blocks http://www.eclipse.org/papyrus/sysml/1.4/SysML/PortsAndFlows http://www.eclipse.org/papyrus/sysml/1.4/SysML#//portsandflows">
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:Blocks="http://www.eclipse.org/papyrus/sysml/1.4/SysML/Blocks" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML" xsi:schemaLocation="http://www.eclipse.org/papyrus/sysml/1.4/SysML/Blocks http://www.eclipse.org/papyrus/sysml/1.4/SysML#//blocks">
   <uml:Model xmi:id="_jtqM8HiUEeenUYaAhnPMag" name="RootElement">
     <packageImport xmi:type="uml:PackageImport" xmi:id="_j4rxMHiUEeenUYaAhnPMag">
       <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
@@ -12,9 +12,29 @@
     <packagedElement xmi:type="uml:Class" xmi:id="_7HnggHiVEeenUYaAhnPMag" name="Server">
       <ownedAttribute xmi:type="uml:Property" xmi:id="_c1vA8niWEeenUYaAhnPMag" name="livedatabase" type="_tEJlwHiVEeenUYaAhnPMag" aggregation="composite" association="_c1ty0HiWEeenUYaAhnPMag"/>
       <ownedAttribute xmi:type="uml:Property" xmi:id="_drdIAniWEeenUYaAhnPMag" name="pyleancanvaslib" type="_UFZMsHiWEeenUYaAhnPMag" aggregation="composite" association="_drcg8HiWEeenUYaAhnPMag"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_lrackHlkEeecyb8EElvbOQ" name="ItemsLeanCanvas" type="_7HnggHiVEeenUYaAhnPMag" aggregation="composite" association="_pr2zMHlkEeecyb8EElvbOQ"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_74aDMHlkEeecyb8EElvbOQ" name="CopyOf_Problem_1" type="_7HnggHiVEeenUYaAhnPMag" aggregation="composite"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_AMJT0HlmEeecyb8EElvbOQ" name="itemspycanvas" type="_7a3WIHllEeecyb8EElvbOQ" aggregation="composite" association="_AMFCYHlmEeecyb8EElvbOQ"/>
+      <ownedConnector xmi:type="uml:Connector" xmi:id="_cqNsYHllEeecyb8EElvbOQ" name="Connector1">
+        <end xmi:type="uml:ConnectorEnd" xmi:id="_cqQIoHllEeecyb8EElvbOQ" role="_lrackHlkEeecyb8EElvbOQ"/>
+        <end xmi:type="uml:ConnectorEnd" xmi:id="_cqRWwHllEeecyb8EElvbOQ" role="_drdIAniWEeenUYaAhnPMag"/>
+      </ownedConnector>
+      <ownedConnector xmi:type="uml:Connector" xmi:id="_gHrRwHllEeecyb8EElvbOQ" name="Connector2">
+        <end xmi:type="uml:ConnectorEnd" xmi:id="_gHsf4HllEeecyb8EElvbOQ" role="_lrackHlkEeecyb8EElvbOQ"/>
+        <end xmi:type="uml:ConnectorEnd" xmi:id="_gHsf4XllEeecyb8EElvbOQ" role="_c1vA8niWEeenUYaAhnPMag"/>
+      </ownedConnector>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_DPtpAHiWEeenUYaAhnPMag" name="Clients">
       <ownedAttribute xmi:type="uml:Property" xmi:id="_5na8QniZEeenUYaAhnPMag" name="server" type="_7HnggHiVEeenUYaAhnPMag" association="_5nWq0HiZEeenUYaAhnPMag"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_DwVzUHlmEeecyb8EElvbOQ" name="WriteProblemItems"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_G6HnsHlmEeecyb8EElvbOQ" name="WriteSolutionItems"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_KBGmwHlmEeecyb8EElvbOQ" name="WriteCustomersItems"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_L8eHQHlmEeecyb8EElvbOQ" name="WriteMetricsItems"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_QqadEHlmEeecyb8EElvbOQ" name="WriteUniqueValuesItems"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_gTfDsHlmEeecyb8EElvbOQ" name="WriteAdvantageItems"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_j1jcQHlmEeecyb8EElvbOQ" name="WriteChannelsItems"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_pIDQoHlmEeecyb8EElvbOQ" name="WriteCostItems"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_ro3AgHlmEeecyb8EElvbOQ" name="WriteRevenuesItems"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_UFZMsHiWEeenUYaAhnPMag" name="PyLeanCanvasLib"/>
     <packagedElement xmi:type="uml:Association" xmi:id="_c1ty0HiWEeenUYaAhnPMag" memberEnd="_c1vA8niWEeenUYaAhnPMag _c1voAHiWEeenUYaAhnPMag">
@@ -34,6 +54,16 @@
         <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_5na8QXiZEeenUYaAhnPMag" key="nature" value="UML_Nature"/>
       </eAnnotations>
       <ownedEnd xmi:type="uml:Property" xmi:id="_5nbjUHiZEeenUYaAhnPMag" name="clients" type="_DPtpAHiWEeenUYaAhnPMag" association="_5nWq0HiZEeenUYaAhnPMag"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_pr2zMHlkEeecyb8EElvbOQ" memberEnd="_lrackHlkEeecyb8EElvbOQ _pr4BUHlkEeecyb8EElvbOQ">
+      <ownedEnd xmi:type="uml:Property" xmi:id="_pr4BUHlkEeecyb8EElvbOQ" type="_7HnggHiVEeenUYaAhnPMag" association="_pr2zMHlkEeecyb8EElvbOQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Class" xmi:id="_7a3WIHllEeecyb8EElvbOQ" name="itemsPyCanvas"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_AMFCYHlmEeecyb8EElvbOQ" memberEnd="_AMJT0HlmEeecyb8EElvbOQ _AMJ64HlmEeecyb8EElvbOQ">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_AMHeoHlmEeecyb8EElvbOQ" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_AMHeoXlmEeecyb8EElvbOQ" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_AMJ64HlmEeecyb8EElvbOQ" name="server" type="_7HnggHiVEeenUYaAhnPMag" association="_AMFCYHlmEeecyb8EElvbOQ"/>
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_jvmtsHiUEeenUYaAhnPMag">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_jvsNQHiUEeenUYaAhnPMag" source="http://www.eclipse.org/uml2/2.0.0/UML">
@@ -106,8 +136,6 @@
   <Blocks:Block xmi:id="_7H83sHiVEeenUYaAhnPMag" base_Class="_7HnggHiVEeenUYaAhnPMag"/>
   <Blocks:Block xmi:id="_DP9goHiWEeenUYaAhnPMag" base_Class="_DPtpAHiWEeenUYaAhnPMag"/>
   <Blocks:Block xmi:id="_UFn2MHiWEeenUYaAhnPMag" base_Class="_UFZMsHiWEeenUYaAhnPMag"/>
-  <PortsAndFlows:FullPort xmi:id="_2jcVQHiWEeenUYaAhnPMag"/>
-  <PortsAndFlows:FullPort xmi:id="_3UjpIHiWEeenUYaAhnPMag"/>
-  <PortsAndFlows:ProxyPort xmi:id="_53cnMHiXEeenUYaAhnPMag"/>
   <Blocks:Block xmi:id="_5niRAHiZEeenUYaAhnPMag" base_Class="_5nWq0HiZEeenUYaAhnPMag"/>
+  <Blocks:Block xmi:id="_7bEKcHllEeecyb8EElvbOQ" base_Class="_7a3WIHllEeecyb8EElvbOQ"/>
 </xmi:XMI>
