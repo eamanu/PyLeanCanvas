@@ -12,6 +12,10 @@
     <packagedElement xmi:type="uml:Class" xmi:id="_7HnggHiVEeenUYaAhnPMag" name="Server">
       <ownedAttribute xmi:type="uml:Property" xmi:id="_OMv6wHq5EeeLy788jrH44g" name="pyleancanvaslib" type="_UFZMsHiWEeenUYaAhnPMag" aggregation="composite" association="_OMusoHq5EeeLy788jrH44g"/>
       <ownedAttribute xmi:type="uml:Property" xmi:id="_ZyeoIHsDEeevLPBX1NGAiQ" name="livedatabase" type="_tEJlwHiVEeenUYaAhnPMag" aggregation="composite" association="_ZyUQEHsDEeevLPBX1NGAiQ"/>
+      <ownedConnector xmi:type="uml:Connector" xmi:id="_cKtj4Hz9Eee3r8ZUV4LWVg" name="ConnectionBD">
+        <end xmi:type="uml:ConnectorEnd" xmi:id="_cK0RkHz9Eee3r8ZUV4LWVg" role="_OMv6wHq5EeeLy788jrH44g"/>
+        <end xmi:type="uml:ConnectorEnd" xmi:id="_cK04oHz9Eee3r8ZUV4LWVg" role="_ZyeoIHsDEeevLPBX1NGAiQ"/>
+      </ownedConnector>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_DPtpAHiWEeenUYaAhnPMag" name="Clients">
       <ownedAttribute xmi:type="uml:Property" xmi:id="_CU3kQHqtEeeLy788jrH44g" name="ID">
@@ -119,7 +123,6 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_5T7cwHywEeetfpsc8gnG4w"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_5UGb4HywEeetfpsc8gnG4w" value="*"/>
       </ownedAttribute>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_I8LGcHsQEeevLPBX1NGAiQ" name="itemspycanvas" type="_7a3WIHllEeecyb8EElvbOQ" association="_I8E_0HsQEeevLPBX1NGAiQ"/>
       <ownedOperation xmi:type="uml:Operation" xmi:id="_5gZ6cHqrEeeLy788jrH44g" name="SaveDatabase" visibility="private"/>
       <ownedOperation xmi:type="uml:Operation" xmi:id="_7XgmAHqrEeeLy788jrH44g" name="ReadDatabase" visibility="private"/>
       <ownedOperation xmi:type="uml:Operation" xmi:id="_8zjGMHqrEeeLy788jrH44g" name="SyncWithDatabase" visibility="private"/>
@@ -144,6 +147,16 @@
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2hXD8HyvEeetfpsc8gnG4w"/>
         <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2hdKkHyvEeetfpsc8gnG4w" value="*"/>
       </ownedAttribute>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_U277oHz6EeeN0s3MbZpTHg" name="WriteNewProblemItem">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_6lVIsHz8Eee3r8ZUV4LWVg" name="prob">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_--wAAHz8Eee3r8ZUV4LWVg" name="writeProblem">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_DzRe8Hz9Eee3r8ZUV4LWVg" name="prob">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_OMusoHq5EeeLy788jrH44g" memberEnd="_OMv6wHq5EeeLy788jrH44g _OMv6wXq5EeeLy788jrH44g">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_OMvTsHq5EeeLy788jrH44g" source="org.eclipse.papyrus">
@@ -190,16 +203,47 @@
     <packagedElement xmi:type="uml:Class" xmi:id="_ukRKIHsFEeevLPBX1NGAiQ" name="Revenue">
       <generalization xmi:type="uml:Generalization" xmi:id="_YbijAHsGEeevLPBX1NGAiQ" general="_7a3WIHllEeecyb8EElvbOQ"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:AssociationClass" xmi:id="_I8E_0HsQEeevLPBX1NGAiQ" name="Charge" memberEnd="_I8LGcHsQEeevLPBX1NGAiQ _I8LGcXsQEeevLPBX1NGAiQ">
-      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_I8KfYHsQEeevLPBX1NGAiQ" source="org.eclipse.papyrus">
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_I8KfYXsQEeevLPBX1NGAiQ" key="nature" value="UML_Nature"/>
-      </eAnnotations>
-      <ownedEnd xmi:type="uml:Property" xmi:id="_I8LGcXsQEeevLPBX1NGAiQ" type="_UFZMsHiWEeenUYaAhnPMag" association="_I8E_0HsQEeevLPBX1NGAiQ"/>
-    </packagedElement>
     <packagedElement xmi:type="uml:Model" xmi:id="_MlX4QHyxEeetfpsc8gnG4w" name="Behavior">
-      <packagedElement xmi:type="uml:Interaction" xmi:id="_V4wvMHyxEeetfpsc8gnG4w" useCase="_RVga4Hy7Eeewe6st7aulRg" isReentrant="false">
-        <lifeline xmi:type="uml:Lifeline" xmi:id="_ZtWrEHzFEeeHf9uD-nwo9Q" name="clients" represents="_PPuOkHzFEeeHf9uD-nwo9Q"/>
-        <lifeline xmi:type="uml:Lifeline" xmi:id="_actrcHzFEeeHf9uD-nwo9Q" name="pyLeanCanvasLib" represents="_PPtngnzFEeeHf9uD-nwo9Q"/>
+      <packagedElement xmi:type="uml:Interaction" xmi:id="_V4wvMHyxEeetfpsc8gnG4w" name="Write Problem" useCase="_RVga4Hy7Eeewe6st7aulRg" isReentrant="false">
+        <lifeline xmi:type="uml:Lifeline" xmi:id="_RmMgcHz2EeeN0s3MbZpTHg" name="Lifeline" represents="_PPuOkHzFEeeHf9uD-nwo9Q" coveredBy="_0VrFUHz4EeeN0s3MbZpTHg _3jwK4Hz4EeeN0s3MbZpTHg"/>
+        <lifeline xmi:type="uml:Lifeline" xmi:id="_R61TsHz2EeeN0s3MbZpTHg" name="Lifeline0" represents="_PPtngnzFEeeHf9uD-nwo9Q" coveredBy="_3jwx8Hz4EeeN0s3MbZpTHg _5EuOYHz4EeeN0s3MbZpTHg _5EkdYHz4EeeN0s3MbZpTHg _qTinIHz6EeeN0s3MbZpTHg _Vry_sHz9Eee3r8ZUV4LWVg _uBL2MHz9Eee3r8ZUV4LWVg"/>
+        <lifeline xmi:type="uml:Lifeline" xmi:id="_Ll-GkHz6EeeN0s3MbZpTHg" name="Lifeline1" represents="_D9n1IHz6EeeN0s3MbZpTHg" coveredBy="_U3wbAHz6EeeN0s3MbZpTHg _U3vz8Hz6EeeN0s3MbZpTHg _-_wsoHz8Eee3r8ZUV4LWVg _-_wFkHz8Eee3r8ZUV4LWVg"/>
+        <lifeline xmi:type="uml:Lifeline" xmi:id="_QtbBMHz9Eee3r8ZUV4LWVg" name="Lifeline2" represents="_OMv6wXq5EeeLy788jrH44g" coveredBy="_VrxKgHz9Eee3r8ZUV4LWVg"/>
+        <lifeline xmi:type="uml:Lifeline" xmi:id="_o3KBUHz9Eee3r8ZUV4LWVg" name="Lifeline3" represents="_ZyeoIHsDEeevLPBX1NGAiQ" coveredBy="_uBNEUHz9Eee3r8ZUV4LWVg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_3jwx8Hz4EeeN0s3MbZpTHg" name="WriteProblem_MessageRecv" covered="_R61TsHz2EeeN0s3MbZpTHg" message="_3ju8wHz4EeeN0s3MbZpTHg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_VrxKgHz9Eee3r8ZUV4LWVg" name="SaveDatabase_MessageSend" covered="_QtbBMHz9Eee3r8ZUV4LWVg" message="_VrvVUHz9Eee3r8ZUV4LWVg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_0VrFUHz4EeeN0s3MbZpTHg" name="WriteProblemItems_MessageRecv" covered="_RmMgcHz2EeeN0s3MbZpTHg" message="_0VZ_kHz4EeeN0s3MbZpTHg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_U3wbAHz6EeeN0s3MbZpTHg" name="WriteProblem_Message0Recv" covered="_Ll-GkHz6EeeN0s3MbZpTHg" message="_U3ul0Hz6EeeN0s3MbZpTHg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_Vry_sHz9Eee3r8ZUV4LWVg" name="SaveDatabase_MessageRecv" covered="_R61TsHz2EeeN0s3MbZpTHg" message="_VrvVUHz9Eee3r8ZUV4LWVg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_uBL2MHz9Eee3r8ZUV4LWVg" name="SaveDB_MessageSend" covered="_R61TsHz2EeeN0s3MbZpTHg" message="_uBKBAHz9Eee3r8ZUV4LWVg"/>
+        <fragment xmi:type="uml:CombinedFragment" xmi:id="_5EkdYHz4EeeN0s3MbZpTHg" name="CombinedFragment" covered="_R61TsHz2EeeN0s3MbZpTHg" interactionOperator="alt">
+          <operand xmi:type="uml:InteractionOperand" xmi:id="_5EuOYHz4EeeN0s3MbZpTHg" name="InteractionOperand" covered="_R61TsHz2EeeN0s3MbZpTHg">
+            <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_U3vz8Hz6EeeN0s3MbZpTHg" name="WriteProblem_Message0Send" covered="_Ll-GkHz6EeeN0s3MbZpTHg" message="_U3ul0Hz6EeeN0s3MbZpTHg"/>
+            <guard xmi:type="uml:InteractionConstraint" xmi:id="_5EvcgHz4EeeN0s3MbZpTHg" name="ifNewItem">
+              <specification xmi:type="uml:LiteralString" xmi:id="_IpHJUHz5EeeN0s3MbZpTHg" value="if  newItem"/>
+              <maxint xmi:type="uml:LiteralInteger" xmi:id="_5EwDkXz4EeeN0s3MbZpTHg" value="1"/>
+              <minint xmi:type="uml:LiteralInteger" xmi:id="_5EwDkHz4EeeN0s3MbZpTHg"/>
+            </guard>
+          </operand>
+          <operand xmi:type="uml:InteractionOperand" xmi:id="_qTinIHz6EeeN0s3MbZpTHg" name="InteractionOperand0" covered="_R61TsHz2EeeN0s3MbZpTHg">
+            <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_-_wFkHz8Eee3r8ZUV4LWVg" name="writeProblem_MessageSend" covered="_Ll-GkHz6EeeN0s3MbZpTHg" message="_-_oJwHz8Eee3r8ZUV4LWVg"/>
+            <guard xmi:type="uml:InteractionConstraint" xmi:id="_qTjOMHz6EeeN0s3MbZpTHg">
+              <specification xmi:type="uml:LiteralString" xmi:id="_qTj1QHz6EeeN0s3MbZpTHg" value="else"/>
+              <maxint xmi:type="uml:LiteralInteger" xmi:id="_qTj1Qnz6EeeN0s3MbZpTHg" value="1"/>
+              <minint xmi:type="uml:LiteralInteger" xmi:id="_qTj1QXz6EeeN0s3MbZpTHg"/>
+            </guard>
+          </operand>
+        </fragment>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_uBNEUHz9Eee3r8ZUV4LWVg" name="SaveDB_MessageRecv" covered="_o3KBUHz9Eee3r8ZUV4LWVg" message="_uBKBAHz9Eee3r8ZUV4LWVg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_3jwK4Hz4EeeN0s3MbZpTHg" name="WriteProblem_MessageSend" covered="_RmMgcHz2EeeN0s3MbZpTHg" message="_3ju8wHz4EeeN0s3MbZpTHg"/>
+        <fragment xmi:type="uml:MessageOccurrenceSpecification" xmi:id="_-_wsoHz8Eee3r8ZUV4LWVg" name="writeProblem_MessageRecv" covered="_Ll-GkHz6EeeN0s3MbZpTHg" message="_-_oJwHz8Eee3r8ZUV4LWVg"/>
+        <formalGate xmi:type="uml:Gate" xmi:id="_0VmM0Hz4EeeN0s3MbZpTHg" name="gate0" message="_0VZ_kHz4EeeN0s3MbZpTHg"/>
+        <message xmi:type="uml:Message" xmi:id="_0VZ_kHz4EeeN0s3MbZpTHg" name="WriteProblemItems_Message" messageSort="asynchCall" receiveEvent="_0VrFUHz4EeeN0s3MbZpTHg" sendEvent="_0VmM0Hz4EeeN0s3MbZpTHg" signature="_DwVzUHlmEeecyb8EElvbOQ"/>
+        <message xmi:type="uml:Message" xmi:id="_3ju8wHz4EeeN0s3MbZpTHg" name="WriteProblem_Message" messageSort="asynchCall" receiveEvent="_3jwx8Hz4EeeN0s3MbZpTHg" sendEvent="_3jwK4Hz4EeeN0s3MbZpTHg" signature="_DYmQkHy6Eeewe6st7aulRg"/>
+        <message xmi:type="uml:Message" xmi:id="_U3ul0Hz6EeeN0s3MbZpTHg" name="WriteNewProblemItem_Message0" messageSort="asynchCall" receiveEvent="_U3wbAHz6EeeN0s3MbZpTHg" sendEvent="_U3vz8Hz6EeeN0s3MbZpTHg" signature="_U277oHz6EeeN0s3MbZpTHg"/>
+        <message xmi:type="uml:Message" xmi:id="_-_oJwHz8Eee3r8ZUV4LWVg" name="writeProblem_Message" messageSort="asynchCall" receiveEvent="_-_wsoHz8Eee3r8ZUV4LWVg" sendEvent="_-_wFkHz8Eee3r8ZUV4LWVg" signature="_--wAAHz8Eee3r8ZUV4LWVg"/>
+        <message xmi:type="uml:Message" xmi:id="_VrvVUHz9Eee3r8ZUV4LWVg" name="SaveDatabase_Message" messageSort="asynchCall" receiveEvent="_Vry_sHz9Eee3r8ZUV4LWVg" sendEvent="_VrxKgHz9Eee3r8ZUV4LWVg" signature="_5gZ6cHqrEeeLy788jrH44g"/>
+        <message xmi:type="uml:Message" xmi:id="_uBKBAHz9Eee3r8ZUV4LWVg" name="SaveDB_Message" messageSort="asynchSignal" receiveEvent="_uBNEUHz9Eee3r8ZUV4LWVg" sendEvent="_uBL2MHz9Eee3r8ZUV4LWVg" signature="_uARQMHz9Eee3r8ZUV4LWVg"/>
       </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Actor" xmi:id="_QAER8Hy7Eeewe6st7aulRg" name="User"/>
@@ -218,6 +262,14 @@
       <ownedEnd xmi:type="uml:Property" xmi:id="_PPuOkHzFEeeHf9uD-nwo9Q" type="_DPtpAHiWEeenUYaAhnPMag" association="_PPtAcHzFEeeHf9uD-nwo9Q"/>
       <ownedEnd xmi:type="uml:Property" xmi:id="_PPtngnzFEeeHf9uD-nwo9Q" type="_UFZMsHiWEeenUYaAhnPMag" association="_PPtAcHzFEeeHf9uD-nwo9Q"/>
     </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_D9X9gHz6EeeN0s3MbZpTHg" name="Charge" memberEnd="_D9n1IHz6EeeN0s3MbZpTHg _D9n1IXz6EeeN0s3MbZpTHg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_D9l_8Hz6EeeN0s3MbZpTHg" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_D9mnAHz6EeeN0s3MbZpTHg" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_D9n1IXz6EeeN0s3MbZpTHg" type="_UFZMsHiWEeenUYaAhnPMag" association="_D9X9gHz6EeeN0s3MbZpTHg"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_D9n1IHz6EeeN0s3MbZpTHg" type="_7a3WIHllEeecyb8EElvbOQ" association="_D9X9gHz6EeeN0s3MbZpTHg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Signal" xmi:id="_uARQMHz9Eee3r8ZUV4LWVg" name="SaveDB"/>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_jvmtsHiUEeenUYaAhnPMag">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_jvsNQHiUEeenUYaAhnPMag" source="http://www.eclipse.org/uml2/2.0.0/UML">
         <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/sysml/1.4/SysML#/"/>
@@ -300,5 +352,4 @@
   <Blocks:Block xmi:id="_rpZUcHsFEeevLPBX1NGAiQ" base_Class="_rpHnoHsFEeevLPBX1NGAiQ"/>
   <Blocks:Block xmi:id="_tF_1UHsFEeevLPBX1NGAiQ" base_Class="_tF0PIHsFEeevLPBX1NGAiQ"/>
   <Blocks:Block xmi:id="_ukdXYHsFEeevLPBX1NGAiQ" base_Class="_ukRKIHsFEeevLPBX1NGAiQ"/>
-  <Blocks:Block xmi:id="_I8TpUHsQEeevLPBX1NGAiQ" base_Class="_I8E_0HsQEeevLPBX1NGAiQ"/>
 </xmi:XMI>
