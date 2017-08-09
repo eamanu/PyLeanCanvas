@@ -21,17 +21,60 @@
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
       </ownedAttribute>
       <ownedAttribute xmi:type="uml:Property" xmi:id="_A9t4kHsEEeevLPBX1NGAiQ" name="server" type="_7HnggHiVEeenUYaAhnPMag" association="_A9P-gHsEEeevLPBX1NGAiQ"/>
-      <ownedOperation xmi:type="uml:Operation" xmi:id="_DwVzUHlmEeecyb8EElvbOQ" name="WriteProblemItems"/>
-      <ownedOperation xmi:type="uml:Operation" xmi:id="_G6HnsHlmEeecyb8EElvbOQ" name="WriteSolutionItems"/>
-      <ownedOperation xmi:type="uml:Operation" xmi:id="_KBGmwHlmEeecyb8EElvbOQ" name="WriteCustomersItems"/>
-      <ownedOperation xmi:type="uml:Operation" xmi:id="_L8eHQHlmEeecyb8EElvbOQ" name="WriteMetricsItems"/>
-      <ownedOperation xmi:type="uml:Operation" xmi:id="_QqadEHlmEeecyb8EElvbOQ" name="WriteUniqueValuesItems"/>
-      <ownedOperation xmi:type="uml:Operation" xmi:id="_gTfDsHlmEeecyb8EElvbOQ" name="WriteAdvantageItems"/>
-      <ownedOperation xmi:type="uml:Operation" xmi:id="_j1jcQHlmEeecyb8EElvbOQ" name="WriteChannelsItems"/>
-      <ownedOperation xmi:type="uml:Operation" xmi:id="_pIDQoHlmEeecyb8EElvbOQ" name="WriteCostItems"/>
-      <ownedOperation xmi:type="uml:Operation" xmi:id="_ro3AgHlmEeecyb8EElvbOQ" name="WriteRevenuesItems"/>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_Wt0fMnzCEeeHf9uD-nwo9Q" name="pyleancanvaslib" type="_UFZMsHiWEeenUYaAhnPMag" association="_WtuYkHzCEeeHf9uD-nwo9Q"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_DwVzUHlmEeecyb8EElvbOQ" name="WriteProblemItems">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_dcrpEHywEeetfpsc8gnG4w" name="problem">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_G6HnsHlmEeecyb8EElvbOQ" name="WriteSolutionItems">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_f_Ab4HywEeetfpsc8gnG4w" name="solution">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_KBGmwHlmEeecyb8EElvbOQ" name="WriteCustomersItems">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_jfxM4HywEeetfpsc8gnG4w" name="customers">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_L8eHQHlmEeecyb8EElvbOQ" name="WriteMetricsItems">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_k4J8IHywEeetfpsc8gnG4w" name="metrics">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_QqadEHlmEeecyb8EElvbOQ" name="WriteUniqueValuesItems">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_nQ5VIHywEeetfpsc8gnG4w" name="uniqueValues">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_gTfDsHlmEeecyb8EElvbOQ" name="WriteAdvantageItems">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_o8Sf8HywEeetfpsc8gnG4w" name="advantage">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_j1jcQHlmEeecyb8EElvbOQ" name="WriteChannelsItems">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_qUOjQHywEeetfpsc8gnG4w" name="channel">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_pIDQoHlmEeecyb8EElvbOQ" name="WriteCostItems">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_ruLYwHywEeetfpsc8gnG4w" name="cost">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_ro3AgHlmEeecyb8EElvbOQ" name="WriteRevenuesItems">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_tX5voHywEeetfpsc8gnG4w" name="revenue">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_rcExkHyvEeetfpsc8gnG4w" name="ReadDatas"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_UFZMsHiWEeenUYaAhnPMag" name="PyLeanCanvasLib">
+      <ownedRule xmi:type="uml:InteractionConstraint" xmi:id="_p6XGMHy6Eeewe6st7aulRg" name="ifNewItem">
+        <specification xmi:type="uml:LiteralString" xmi:id="_p6XtQHy6Eeewe6st7aulRg" value="if newItem"/>
+        <maxint xmi:type="uml:LiteralInteger" xmi:id="_p6YUUXy6Eeewe6st7aulRg" value="1"/>
+        <minint xmi:type="uml:LiteralInteger" xmi:id="_p6YUUHy6Eeewe6st7aulRg"/>
+      </ownedRule>
       <ownedAttribute xmi:type="uml:Property" xmi:id="_OmcVgHqrEeeLy788jrH44g" name="Problem">
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
         <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_S0nmIHqrEeeLy788jrH44g"/>
@@ -49,34 +92,58 @@
       </ownedAttribute>
       <ownedAttribute xmi:type="uml:Property" xmi:id="_mTFxAHqrEeeLy788jrH44g" name="Metrics">
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_3A6RQHywEeetfpsc8gnG4w"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_3BITsHywEeetfpsc8gnG4w" value="*"/>
       </ownedAttribute>
       <ownedAttribute xmi:type="uml:Property" xmi:id="_o2-DAHqrEeeLy788jrH44g" name="UniqueValues">
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_6fw9wHywEeetfpsc8gnG4w"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6f784HywEeetfpsc8gnG4w" value="*"/>
       </ownedAttribute>
       <ownedAttribute xmi:type="uml:Property" xmi:id="_rs2rAHqrEeeLy788jrH44g" name="Advantege">
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_317NsHywEeetfpsc8gnG4w"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_32Gz4HywEeetfpsc8gnG4w" value="*"/>
       </ownedAttribute>
       <ownedAttribute xmi:type="uml:Property" xmi:id="_uw_xcHqrEeeLy788jrH44g" name="Channel">
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_4UOTQHywEeetfpsc8gnG4w"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_4UZSYHywEeetfpsc8gnG4w" value="*"/>
       </ownedAttribute>
       <ownedAttribute xmi:type="uml:Property" xmi:id="_xYPggHqrEeeLy788jrH44g" name="Cost">
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_41BTMHywEeetfpsc8gnG4w"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_41M5YHywEeetfpsc8gnG4w" value="*"/>
       </ownedAttribute>
       <ownedAttribute xmi:type="uml:Property" xmi:id="_0Yj24HqrEeeLy788jrH44g" name="Revenue">
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_5T7cwHywEeetfpsc8gnG4w"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_5UGb4HywEeetfpsc8gnG4w" value="*"/>
       </ownedAttribute>
       <ownedAttribute xmi:type="uml:Property" xmi:id="_I8LGcHsQEeevLPBX1NGAiQ" name="itemspycanvas" type="_7a3WIHllEeecyb8EElvbOQ" association="_I8E_0HsQEeevLPBX1NGAiQ"/>
       <ownedOperation xmi:type="uml:Operation" xmi:id="_5gZ6cHqrEeeLy788jrH44g" name="SaveDatabase" visibility="private"/>
       <ownedOperation xmi:type="uml:Operation" xmi:id="_7XgmAHqrEeeLy788jrH44g" name="ReadDatabase" visibility="private"/>
       <ownedOperation xmi:type="uml:Operation" xmi:id="_8zjGMHqrEeeLy788jrH44g" name="SyncWithDatabase" visibility="private"/>
       <ownedOperation xmi:type="uml:Operation" xmi:id="_AcwokHqsEeeLy788jrH44g" name="SyncClient" visibility="private"/>
+      <ownedOperation xmi:type="uml:Operation" xmi:id="_DYmQkHy6Eeewe6st7aulRg" name="WriteProblem">
+        <ownedParameter xmi:type="uml:Parameter" xmi:id="_R4AgcHy6Eeewe6st7aulRg" name="prob">
+          <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        </ownedParameter>
+      </ownedOperation>
     </packagedElement>
     <packagedElement xmi:type="uml:Class" xmi:id="_7a3WIHllEeecyb8EElvbOQ" name="itemsPyCanvas">
       <ownedAttribute xmi:type="uml:Property" xmi:id="_YS9qQHsQEeevLPBX1NGAiQ" name="items">
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_kAXN8HyvEeetfpsc8gnG4w"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_kBAuMHyvEeetfpsc8gnG4w" value="*"/>
       </ownedAttribute>
       <ownedAttribute xmi:type="uml:Property" xmi:id="_dkl78HsQEeevLPBX1NGAiQ" name="IdProperty">
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+      </ownedAttribute>
+      <ownedAttribute xmi:type="uml:Property" xmi:id="_zJfJMHyvEeetfpsc8gnG4w" name="idChanges">
+        <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
+        <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_2hXD8HyvEeetfpsc8gnG4w"/>
+        <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_2hdKkHyvEeetfpsc8gnG4w" value="*"/>
       </ownedAttribute>
     </packagedElement>
     <packagedElement xmi:type="uml:Association" xmi:id="_OMusoHq5EeeLy788jrH44g" memberEnd="_OMv6wHq5EeeLy788jrH44g _OMv6wXq5EeeLy788jrH44g">
@@ -128,7 +195,28 @@
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_I8KfYHsQEeevLPBX1NGAiQ" source="org.eclipse.papyrus">
         <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_I8KfYXsQEeevLPBX1NGAiQ" key="nature" value="UML_Nature"/>
       </eAnnotations>
-      <ownedEnd xmi:type="uml:Property" xmi:id="_I8LGcXsQEeevLPBX1NGAiQ" name="pyleancanvaslib" type="_UFZMsHiWEeenUYaAhnPMag" association="_I8E_0HsQEeevLPBX1NGAiQ"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_I8LGcXsQEeevLPBX1NGAiQ" type="_UFZMsHiWEeenUYaAhnPMag" association="_I8E_0HsQEeevLPBX1NGAiQ"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Model" xmi:id="_MlX4QHyxEeetfpsc8gnG4w" name="Behavior">
+      <packagedElement xmi:type="uml:Interaction" xmi:id="_V4wvMHyxEeetfpsc8gnG4w" name="WriteProblem" useCase="_RVga4Hy7Eeewe6st7aulRg" isReentrant="false">
+        <ownedAttribute xmi:type="uml:Property" xmi:id="_0lgEIHzDEeeHf9uD-nwo9Q" name="" type="_DPtpAHiWEeenUYaAhnPMag"/>
+        <lifeline xmi:type="uml:Lifeline" xmi:id="_xeP0wHzCEeeHf9uD-nwo9Q" name="client" represents="_0lgEIHzDEeeHf9uD-nwo9Q"/>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Actor" xmi:id="_QAER8Hy7Eeewe6st7aulRg" name="User"/>
+    <packagedElement xmi:type="uml:UseCase" xmi:id="_RVga4Hy7Eeewe6st7aulRg" name="WriteProblem" subject="_V4wvMHyxEeetfpsc8gnG4w"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_Sp-6gHy7Eeewe6st7aulRg" memberEnd="_SqFBIHy7Eeewe6st7aulRg _SqFoMHy7Eeewe6st7aulRg">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_SqDL8Hy7Eeewe6st7aulRg" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_SqDzAHy7Eeewe6st7aulRg" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_SqFBIHy7Eeewe6st7aulRg" name="writeproblem" type="_RVga4Hy7Eeewe6st7aulRg" association="_Sp-6gHy7Eeewe6st7aulRg"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_SqFoMHy7Eeewe6st7aulRg" name="user" type="_QAER8Hy7Eeewe6st7aulRg" association="_Sp-6gHy7Eeewe6st7aulRg"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:AssociationClass" xmi:id="_WtuYkHzCEeeHf9uD-nwo9Q" name="AssociationClass1" memberEnd="_Wt0fMnzCEeeHf9uD-nwo9Q _Wt1GQHzCEeeHf9uD-nwo9Q">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Wt0fMHzCEeeHf9uD-nwo9Q" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Wt0fMXzCEeeHf9uD-nwo9Q" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_Wt1GQHzCEeeHf9uD-nwo9Q" type="_DPtpAHiWEeenUYaAhnPMag" association="_WtuYkHzCEeeHf9uD-nwo9Q"/>
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_jvmtsHiUEeenUYaAhnPMag">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_jvsNQHiUEeenUYaAhnPMag" source="http://www.eclipse.org/uml2/2.0.0/UML">
@@ -213,4 +301,5 @@
   <Blocks:Block xmi:id="_tF_1UHsFEeevLPBX1NGAiQ" base_Class="_tF0PIHsFEeevLPBX1NGAiQ"/>
   <Blocks:Block xmi:id="_ukdXYHsFEeevLPBX1NGAiQ" base_Class="_ukRKIHsFEeevLPBX1NGAiQ"/>
   <Blocks:Block xmi:id="_I8TpUHsQEeevLPBX1NGAiQ" base_Class="_I8E_0HsQEeevLPBX1NGAiQ"/>
+  <Blocks:Block xmi:id="_Wt7z8HzCEeeHf9uD-nwo9Q" base_Class="_WtuYkHzCEeeHf9uD-nwo9Q"/>
 </xmi:XMI>
