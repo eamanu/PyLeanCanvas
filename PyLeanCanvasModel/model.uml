@@ -21,7 +21,6 @@
         <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
       </ownedAttribute>
       <ownedAttribute xmi:type="uml:Property" xmi:id="_A9t4kHsEEeevLPBX1NGAiQ" name="server" type="_7HnggHiVEeenUYaAhnPMag" association="_A9P-gHsEEeevLPBX1NGAiQ"/>
-      <ownedAttribute xmi:type="uml:Property" xmi:id="_Wt0fMnzCEeeHf9uD-nwo9Q" name="pyleancanvaslib" type="_UFZMsHiWEeenUYaAhnPMag" association="_WtuYkHzCEeeHf9uD-nwo9Q"/>
       <ownedOperation xmi:type="uml:Operation" xmi:id="_DwVzUHlmEeecyb8EElvbOQ" name="WriteProblemItems">
         <ownedParameter xmi:type="uml:Parameter" xmi:id="_dcrpEHywEeetfpsc8gnG4w" name="problem">
           <type xmi:type="uml:PrimitiveType" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#String"/>
@@ -198,9 +197,9 @@
       <ownedEnd xmi:type="uml:Property" xmi:id="_I8LGcXsQEeevLPBX1NGAiQ" type="_UFZMsHiWEeenUYaAhnPMag" association="_I8E_0HsQEeevLPBX1NGAiQ"/>
     </packagedElement>
     <packagedElement xmi:type="uml:Model" xmi:id="_MlX4QHyxEeetfpsc8gnG4w" name="Behavior">
-      <packagedElement xmi:type="uml:Interaction" xmi:id="_V4wvMHyxEeetfpsc8gnG4w" name="WriteProblem" useCase="_RVga4Hy7Eeewe6st7aulRg" isReentrant="false">
-        <ownedAttribute xmi:type="uml:Property" xmi:id="_0lgEIHzDEeeHf9uD-nwo9Q" name="" type="_DPtpAHiWEeenUYaAhnPMag"/>
-        <lifeline xmi:type="uml:Lifeline" xmi:id="_xeP0wHzCEeeHf9uD-nwo9Q" name="client" represents="_0lgEIHzDEeeHf9uD-nwo9Q"/>
+      <packagedElement xmi:type="uml:Interaction" xmi:id="_V4wvMHyxEeetfpsc8gnG4w" useCase="_RVga4Hy7Eeewe6st7aulRg" isReentrant="false">
+        <lifeline xmi:type="uml:Lifeline" xmi:id="_ZtWrEHzFEeeHf9uD-nwo9Q" name="clients" represents="_PPuOkHzFEeeHf9uD-nwo9Q"/>
+        <lifeline xmi:type="uml:Lifeline" xmi:id="_actrcHzFEeeHf9uD-nwo9Q" name="pyLeanCanvasLib" represents="_PPtngnzFEeeHf9uD-nwo9Q"/>
       </packagedElement>
     </packagedElement>
     <packagedElement xmi:type="uml:Actor" xmi:id="_QAER8Hy7Eeewe6st7aulRg" name="User"/>
@@ -212,11 +211,12 @@
       <ownedEnd xmi:type="uml:Property" xmi:id="_SqFBIHy7Eeewe6st7aulRg" name="writeproblem" type="_RVga4Hy7Eeewe6st7aulRg" association="_Sp-6gHy7Eeewe6st7aulRg"/>
       <ownedEnd xmi:type="uml:Property" xmi:id="_SqFoMHy7Eeewe6st7aulRg" name="user" type="_QAER8Hy7Eeewe6st7aulRg" association="_Sp-6gHy7Eeewe6st7aulRg"/>
     </packagedElement>
-    <packagedElement xmi:type="uml:AssociationClass" xmi:id="_WtuYkHzCEeeHf9uD-nwo9Q" name="AssociationClass1" memberEnd="_Wt0fMnzCEeeHf9uD-nwo9Q _Wt1GQHzCEeeHf9uD-nwo9Q">
-      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_Wt0fMHzCEeeHf9uD-nwo9Q" source="org.eclipse.papyrus">
-        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_Wt0fMXzCEeeHf9uD-nwo9Q" key="nature" value="UML_Nature"/>
+    <packagedElement xmi:type="uml:Association" xmi:id="_PPtAcHzFEeeHf9uD-nwo9Q" memberEnd="_PPtngnzFEeeHf9uD-nwo9Q _PPuOkHzFEeeHf9uD-nwo9Q">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_PPtngHzFEeeHf9uD-nwo9Q" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_PPtngXzFEeeHf9uD-nwo9Q" key="nature" value="UML_Nature"/>
       </eAnnotations>
-      <ownedEnd xmi:type="uml:Property" xmi:id="_Wt1GQHzCEeeHf9uD-nwo9Q" type="_DPtpAHiWEeenUYaAhnPMag" association="_WtuYkHzCEeeHf9uD-nwo9Q"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_PPuOkHzFEeeHf9uD-nwo9Q" type="_DPtpAHiWEeenUYaAhnPMag" association="_PPtAcHzFEeeHf9uD-nwo9Q"/>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_PPtngnzFEeeHf9uD-nwo9Q" type="_UFZMsHiWEeenUYaAhnPMag" association="_PPtAcHzFEeeHf9uD-nwo9Q"/>
     </packagedElement>
     <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_jvmtsHiUEeenUYaAhnPMag">
       <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_jvsNQHiUEeenUYaAhnPMag" source="http://www.eclipse.org/uml2/2.0.0/UML">
@@ -301,5 +301,4 @@
   <Blocks:Block xmi:id="_tF_1UHsFEeevLPBX1NGAiQ" base_Class="_tF0PIHsFEeevLPBX1NGAiQ"/>
   <Blocks:Block xmi:id="_ukdXYHsFEeevLPBX1NGAiQ" base_Class="_ukRKIHsFEeevLPBX1NGAiQ"/>
   <Blocks:Block xmi:id="_I8TpUHsQEeevLPBX1NGAiQ" base_Class="_I8E_0HsQEeevLPBX1NGAiQ"/>
-  <Blocks:Block xmi:id="_Wt7z8HzCEeeHf9uD-nwo9Q" base_Class="_WtuYkHzCEeeHf9uD-nwo9Q"/>
 </xmi:XMI>
